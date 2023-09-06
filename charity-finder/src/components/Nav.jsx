@@ -13,7 +13,7 @@ export default function Nav () {
         setCharity(response.data.nonprofits);
       };
       getApi();
-    }, []);
+    }, [])
   
     // Event handler for input change
     const handleInputChange = (event) => {
