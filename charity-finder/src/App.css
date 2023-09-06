@@ -105,3 +105,10 @@ header ul li a{
   margin: 2rem 0rem;
   
 }
+.charity-list{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  align-items: center;
+  justify-content: center;
+}
