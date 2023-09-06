@@ -15,8 +15,8 @@ function App() {
          <Nav/>
   
      <Routes>
-       <Route path='/home' element={<HomePage/>}/>
-       <Route path='/home/:id' element={<CharityDetailPage/>}/>
+       <Route path='/' element={<HomePage/>}/>
+       <Route path='/charity/:name' element={<CharityDetailPage/>}/>
        <Route path='/favoritepage' element={<FavoritePage/>}/>
      </Routes>
     </div>

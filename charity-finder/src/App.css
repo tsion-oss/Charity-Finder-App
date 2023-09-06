@@ -40,3 +40,68 @@
 .read-the-docs {
   color: #888;
 } */
+#root{
+  padding: 0;
+  margin: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+
+header{
+  background-color: black;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+header ul li a{
+  text-decoration: none;
+  color: white
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  background-color: rgb(255, 236, 213);
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+.box a{
+  text-decoration: none;
+  color: black
+}
+.mainList{
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+.detailBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 24rem;
+  background-color: rgb(255, 236, 213);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.detailMainBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+  
+}
