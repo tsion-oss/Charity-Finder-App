@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { useParams } from "react-router-dom"
 import axios from "axios"
-import FavoritePage from "./FavoritesPage"
+
 
 export default function CharityDetailPage() {
     const { name } = useParams()
@@ -20,6 +20,7 @@ export default function CharityDetailPage() {
                 console.log(response.data.nonprofits)
                 
         };
+
 
         getCharity();
     }, [name]);
@@ -69,6 +70,7 @@ export default function CharityDetailPage() {
                     <p>{selectedItem.description}</p>
                     <button onClick={() => addToFavorite(selectedItem.name)}>Add to favorite</button>
             </div>
+         
         </div>
     );
 }

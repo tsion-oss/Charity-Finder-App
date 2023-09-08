@@ -21,7 +21,7 @@ useEffect(() => {
 
 favoriteBox()
 }, [])
- 
+ ;
 const deleteFavorite = (key) => {
     console.log(key);
   

@@ -13,11 +13,12 @@ useEffect(() => {
     const getApi =  async () => {
         const response = await axios.get(`https://partners.every.org/v0.2/browse/animals?apiKey=pk_live_b05a8e753c108474a4bc46986c53df22`)
     
-        // console.log(response.data)
+        console.log(response.data)
         getCharity(response.data.nonprofits)
      }
     getApi()
 }, [])
+
 
 
     return (
