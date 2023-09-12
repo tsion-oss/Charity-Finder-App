@@ -8,6 +8,7 @@ import { NavLink } from 'react-router-dom'
 import { useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import search from './images/search.png'
 
 function App() {
  
@@ -54,12 +55,15 @@ useEffect(() => {
     <div className='App'> 
     
     <header>
-            <ul>
-                <input type='text' 
+      <div className='searchBox'>
+              <input type='text' 
                         placeholder='Search charitieis....'
                         value={searchQuery}
                         onChange={handleInputChange}></input>
-                <button onClick={fetchCharityData}>search</button>
+                <button onClick={fetchCharityData}><img src={search}/></button>
+        </div>
+            <ul>
+               
                 <li><NavLink to='/'>Charity Finder</NavLink></li>
                 <li><NavLink to='/favoritepage'>Favorite</NavLink></li>
             </ul>

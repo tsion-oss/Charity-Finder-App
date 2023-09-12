@@ -37,18 +37,18 @@ const deleteFavorite = (key) => {
 
  
     return (
-        <div>
+        <div className="favoriteBox">
             <h1>Favorite page</h1>
-            <ul>
+         
          {fav.slice().reverse().map((item, index) => (
-            <div key={index}>
+            <div className="favorite-list" key={index}>
                     <h2 >{item.name}</h2>
                     <img src={item.logoUrl}/>
                     <p>{item.location}</p>   
                     <button onClick={() => deleteFavorite(item.name)}>delete</button>
              </div>
           ))}
-            </ul>
+            
         </div>
     )
 }

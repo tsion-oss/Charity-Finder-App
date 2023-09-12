@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useState, useEffect } from 'react';
+import search from '../images/search.png'
 
 
 export default function Nav () {
@@ -9,7 +10,7 @@ export default function Nav () {
             <ul>
                 <input type='text' 
                         placeholder='Search charitieis....'></input>
-                <button>search</button>
+                <button><img src={search}/></button>
                 <li><NavLink to='/'>Charity Finder</NavLink></li>
                 <li><NavLink to='/favoritepage'>Favorite</NavLink></li>
             </ul>
